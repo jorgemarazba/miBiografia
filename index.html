@@ -27,6 +27,10 @@ Lo que más me apasiona de la Tecnología
 <p><h3>Lo que más me apasiona</h3></p> es la capacidad de evolución constante de la tecnología y cómo herramientas como la Inteligencia Artificial pueden potenciar el desarrollo humano. Me fascina el proceso de transformar una idea abstracta en un producto funcional, como lo hice con el asistente Lexi, integrando lógica de programación, bases de datos y diseño para ofrecer soluciones innovadoras.</p>
         </section>
 
+        <div  class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div>
+
         <div class="grid">
             <section class="section">
                 <h2>Formacion Academica</h2>
@@ -36,23 +40,32 @@ Lo que más me apasiona de la Tecnología
                 </ul>
             </section>
 
+
+
             <section class="section">
                 <h2>Habilidades Tecnicas - Desarrollo Frontend</h2>
-                <div class="hardskills">
-                    <ul class="skills-list">
-                        <li>
-                            <span>HTML5</span>
-                            <span class="percentage">60%</span>
-                        </li>
-                        <li>
-                            <span>CSS3</span>
-                            <span class="percentage">55%</span>
-                        </li>
-                        <li>
-                            <span>JavaScript</span>
-                            <span class="percentage">25%</span>
-                        </li>
-                    </ul>
+                <div class="filter-buttons">
+                    <button class="btn-filter" onclick="filterSkills('all')">Totdas</button>
+                    <button class="btn-filter" onclick="filterSkills('frontend')">Frontend</button>
+                    <button class="btn-filter" onclick="filterSkills('framework')">Backend</button>
+                </div>
+                <div class="skills" id="skillsContainer">
+                    <span class="skill-badge frontend">HTML5</span>
+                    <span class="skill-badge frontend">CSS3</span>
+                    <span class="skill-badge frontend">JavaScript</span>
+                    <span class="skill-badge framework">Node.js</span>
+                    <span class="skill-badge framework">Express</span>
+                </div>
+            </section>
+
+            <section class="section stats-grid">
+                <div class="stat-item">
+                    <h3 class="counter" data-target="15">0</h3>
+                    <p>Proyectos Completados</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="counter" data-target="4">0</h3>
+                    <p>Años de estudio</p>
                 </div>
             </section>
 
