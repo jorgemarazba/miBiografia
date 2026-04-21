@@ -1,368 +1,858 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Biografia Profesional</title>
+    <title>💻 | Portafolio | Jorge Ramírez</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="container">
-        <header class="header">
-            <div class="profile-img">
-                <img src="https://scontent.feoh11-1.fna.fbcdn.net/v/t39.30808-6/645807516_10164216033223330_8189372297989092132_n.jpg?_nc_cat=109&amp;ccb=1-7&amp;_nc_sid=1d70fc&amp;_nc_ohc=LKo1ErlShLUQ7kNvwFTVtCf&amp;_nc_oc=AdpzAVRjRJtRwdulOjQ5Va3yJpZ58JAUKBpukeDT3qZYhFrTdOfETVax-CkdfCMkTXs&amp;_nc_zt=23&amp;_nc_ht=scontent.feoh11-1.fna&amp;_nc_gid=4td4UC3EdvK_eoRS70Ksaw&amp;_nc_ss=7a3a8&amp;oh=00_Af1bfknfneriT-_6VS4zCNslY3hirYs9BNRB4GSNTSBhHA&amp;oe=69E9E405" alt="Foto de perfil">
+    <header class="main-header" id="mainHeader">
+        <nav class="nav-container">
+            <div class="logo"><span class="logo-code">&lt;/&gt;</span> dev<span class="dot">.</span>portfolio</div>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#Habilidades-Tech">Skills</a></li>
+                <li><a href="#portafolio">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="#contacto" class="btn-nav">Contáctame</a>
             </div>
-            <h1><strong>JORGE MARIO RAMIREZ BARRERA</strong></h1>
-            <p class="tagline">Desarrollador de software | Estudiante de Ingenieria de Sistemas </p>
-        </header>
 
-        <section class="section">
-            <h2>SOBRE MI</h2>
-            <p> Soy Jorge Mario Ramírez Barrera, estudiante de último nivel de Ingeniería de Sistemas en la Corporación Universitaria Remington y aprendiz del SENA en Análisis y Desarrollo de Software. Me defino como un desarrollador en formación con bases sólidas en tecnologías Frontend (HTML, CSS, JavaScript y Frameworkds) y una visión integral en la gestión de proyectos TI, capaz de entender tanto el código como los objetivos del negocio.</p>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </nav>
+    </header>
 
-<p><h4>Mis Motivaciones</h4>
-Mi principal motor es la resolución de problemas reales a través de la creación de herramientas digitales que faciliten la vida de las personas. Me motiva enormemente el aprendizaje continuo; por eso, busco establecer un vínculo laboral remoto en entornos, donde pueda fortalecer mis habilidades técnicas bajo la guía de expertos y contribuir a proyectos de escala global.
+    <main class="main-content">
 
-Lo que más me apasiona de la Tecnología
-<p><h3>Lo que más me apasiona</h3></p> es la capacidad de evolución constante de la tecnología y cómo herramientas como la Inteligencia Artificial pueden potenciar el desarrollo humano. Me fascina el proceso de transformar una idea abstracta en un producto funcional, como lo hice con el asistente Lexi, integrando lógica de programación, bases de datos y diseño para ofrecer soluciones innovadoras.</p>
+        <section id="inicio" class="hero-full relative-hero">
+            <!-- Elementos decorativos flotantes de fondo -->
+            <div class="floating-decor d-1">&lt;/&gt;</div>
+            <div class="floating-decor d-2">Const</div>
+            <div class="floating-decor d-3">let</div>
+            <div class="floating-decor d-4">{ }</div>
+            <div class="floating-decor d-5">&lt;div/&gt;</div>
+            <div class="floating-decor d-6">git</div>
+            <div class="floating-decor d-7">npm</div>
+
+            <div class="hero-inner">
+                <div class="hero-text-side">
+                    <span class="code-comment">// hello_world.tsx</span>
+                    <h1>Hola, soy <span class="highlight-cyan">Jorge Mario</span><br><span
+                            class="highlight-magenta">Ramírez Barrera</span></h1>
+                    <div class="typing-container">
+                        <span class="cursor-blue">&gt;</span> <span class="typing-text"
+                            id="typewriter">Estudiante</span><span class="cursor-blink">|</span>
+                    </div>
+                    <p class="description">Desarrollador en formación con bases sólidas en Frontend<br>(HTML, CSS,
+                        JavaScript y frameworks) y visión integral en<br>gestión de proyectos TI. Capaz de entender
+                        tanto el código<br>como los objetivos del negocio.</p>
+                    <div class="hero-actions">
+                        <a href="#portafolio" class="btn-gradient">Ver proyectos &rarr;</a>
+                        <a href="#contacto" class="btn-outline"><span class="download-icon">✉️</span> Contáctame</a>
+                        <a href="CV_ATS_Jorge_Ramirez.html" target="_blank" class="btn-outline" style="border-color: var(--primary-magenta);"><span class="download-icon">📄</span> CV Formato ATS</a>
+                    </div>
+                    <div class="social-icons-mini">
+                        <a href="#"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="20" alt="GitHub"/></a> 
+                        <a href="#"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="20" alt="LinkedIn"/></a> 
+                        <a href="#"><span style="font-size:20px; color:var(--text-muted);">✉</span></a>
+                    </div>
+                </div>
+
+                <div class="hero-image-side">
+                    <div class="profile-card">
+                        <span class="status-badge"><span class="dot-green"></span> Disponible (remoto)</span>
+                        <img src="jorge-perfil.jpg" alt="Jorge" class="main-photo">
+                        <div class="code-tag"><span style="color:#e06c75;">&lt;code</span> <span
+                                style="color:#00f2ff;">passion</span><span style="color:#abb2bf;">=</span><span
+                                style="color:#e5c07b;">{true}</span> <span style="color:#e06c75;">/&gt;</span></div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <div  class="progress-container">
-            <div class="progress-bar" id="myBar"></div>
-        </div>
+        <section id="sobre-mi" class="about-section">
+            <div class="about-grid">
+                <div class="about-text">
+                    <span class="code-comment">// sobre mi</span>
+                    <h2 class="section-title">Construyendo soluciones, <span class="highlight-cyan">una</span><br><span
+                            class="highlight-magenta">línea a la vez</span></h2>
+                    <p class="description">Soy <strong>Jorge Mario Ramírez Barrera</strong>, estudiante de último nivel
+                        en Ingeniería de Sistemas en la Corporación Universitaria Remington y aprendiz del SENA en
+                        Análisis y Desarrollo de Software. Me defino como un desarrollador en formación con bases
+                        sólidas en tecnologías Frontend y una visión integral en la gestión de proyectos TI.</p>
 
-        <div class="grid">
-            <section class="section">
-                <h2>Formacion Academica</h2>
-                <ul>
-                    <li><strong>Ingenieria de Sistemas</strong> - Coorporacion Universitaria Remington (2020)</li>
-                    <li><strong>Tecnologo Analisis y Desarrollo de Software</strong>- Sena 2022</li>
-                </ul>
-            </section>
-
-
-
-            <section class="section">
-                <h2>Habilidades Tecnicas - Desarrollo Frontend</h2>
-                <div class="filter-buttons">
-                    <button class="btn-filter" onclick="filterSkills('all')">Totdas</button>
-                    <button class="btn-filter" onclick="filterSkills('frontend')">Frontend</button>
-                    <button class="btn-filter" onclick="filterSkills('framework')">Backend</button>
+                    <div class="info-card dark-card">
+                        <h4><span class="icon-cyan">🌐</span> Mis motivaciones</h4>
+                        <p>Mi principal motor es la resolución de problemas reales mediante herramientas digitales que
+                            faciliten la vida de las personas. Busco un vínculo laboral remoto donde pueda fortalecer
+                            mis habilidades bajo la guía de expertos y contribuir a proyectos de escala global.</p>
+                    </div>
+                    <div class="info-card dark-card">
+                        <h4><span class="icon-magenta">✨</span> Lo que más me apasiona</h4>
+                        <p>La evolución constante de la tecnología y cómo herramientas como la IA pueden potenciar el
+                            desarrollo humano. Me fascina transformar una idea abstracta en un producto funcional, como
+                            hice con el asistente <strong>Lexi</strong>, integrando lógica, bases de datos y diseño.</p>
+                    </div>
                 </div>
-                <div class="skills" id="skillsContainer">
-                    <span class="skill-badge frontend">HTML5</span>
-                    <span class="skill-badge frontend">CSS3</span>
-                    <span class="skill-badge frontend">JavaScript</span>
-                    <span class="skill-badge framework">Node.js</span>
-                    <span class="skill-badge framework">Express</span>
+
+                <div class="about-cards">
+                    <div class="stats-mini-grid">
+                        <div class="mini-card dark-card"><span class="stat-icon cyan">🚀</span>
+                            <h3>15</h3>
+                            <p>Proyectos completados</p>
+                        </div>
+                        <div class="mini-card dark-card"><span class="stat-icon cyan">🎓</span>
+                            <h3>4</h3>
+                            <p>Años de estudio</p>
+                        </div>
+                        <div class="mini-card dark-card"><span class="stat-icon cyan">✨</span>
+                            <h3>2</h3>
+                            <p>Formaciones activas</p>
+                        </div>
+                    </div>
+
+                    <div class="academic-card dark-card">
+                        <h4>🎓 Formación académica</h4>
+                        <ul>
+                            <li><span class="cyan-bullet">•</span> <strong>Ingeniería de Sistemas</strong> <br> <span
+                                    class="text-muted text-sm">Corporación Universitaria Remington · 2020 -
+                                    Actualidad</span></li>
+                            <li><span class="magenta-bullet">•</span> <strong>Tecnólogo en Análisis y Desarrollo de
+                                    Software</strong> <br> <span class="text-muted text-sm">SENA · 2022</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="code-window-card dark-card outline-glow">
+                        <div class="window-header"><span class="dot red"></span><span class="dot yellow"></span><span
+                                class="dot green"></span></div>
+                        <pre><code><span class="keyword">const</span> dev = {
+  nombre: <span class="string">"Jorge Mario Ramirez B."</span>,
+  rol: <span class="string">"Desarrollador de Software"</span>,
+  formacion: [<span class="string">"Ing. Sistemas"</span>, <span class="string">"ADSO - SENA"</span>],
+  stack: [<span class="string">"React"</span>, <span class="string">"JS"</span>, <span class="string">"Tailwind"</span>, <span class="string">"Node"</span>],
+  modalidad: <span class="string">"Remoto"</span>,
+  pasion: <span class="string">"IA + Producto"</span>,
+};</code></pre>
+                    </div>
                 </div>
-            </section>
-
-            <section class="section stats-grid">
-                <div class="stat-item">
-                    <h3 class="counter" data-target="15">0</h3>
-                    <p>Proyectos Completados</p>
-                </div>
-                <div class="stat-item">
-                    <h3 class="counter" data-target="4">0</h3>
-                    <p>Años de estudio</p>
-                </div>
-            </section>
-
-            <section class="section">
-                <h2>Framework y Librerias</h2>
-                <div class="frameworkLibrerias">
-                    <ul class="skills-list">
-                        <li>
-                            <span>Vue.js</span>
-                            <span class="percentage">15%</span>
-                        </li>
-                        <li>
-                            <span>React</span>
-                            <span class="percentage">30%</span>
-                        </li>
-                        <li>
-                            <span>Angular</span>
-                            <span class="percentage">10%</span>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-
-            <section class="section">
-                <h2>Marquetacion y estilos</h2>
-                <div class="marquetacionEstilos">
-                    <ul class="skills-list">
-                        <li>
-                            <span>Bootstrap</span>
-                            <span class="percentage">80%</span>
-                        </li>
-                        <li>
-                            <span>Tailwind</span>
-                            <span class="percentage">25%</span>
-                        </li>
-                        <li>
-                            <span>Responsive Design</span>
-                            <span class="percentage">99%</span>
-                        </li>
-                        <li>
-                            <span>vuetify</span>
-                            <span class="percentage">20%</span>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-
-            <section class="section">
-                <h2>Diseño de Interfaz</h2>
-                <div class="disenoInterfaz">
-                    <ul class="skills-list">
-                        <li>
-                            <span>Figma</span>
-                            <span class="percentage">80%</span>
-                        </li>
-                        <li>
-                            <span>UX/UI</span>
-                            <span class="percentage">80%</span>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-
-            <section class="section">
-                <h2>Conocimiento Basicos en Backend</h2>
-                <div class="Backend">
-                    <ul class="skills-list">
-                        <li>
-                            <span>Node.js</span>
-                            <span class="percentage">40%</span>
-                        </li>
-                        <li>
-                            <span>Express</span>
-                            <span class="percentage">30%</span>
-                        </li>
-                        <li>
-                            <span>npm - npx</span>
-                            <span class="percentage">50%</span>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-
-            <section class="section">
-                <h2>Base de Datos</h2>
-                <div class="BaseDatos">
-                    <ul class="skills-list">
-                        <li>
-                            <span>MongoDB</span>
-                            <span class="percentage">20%</span>
-                        </li>
-                        <li>
-                            <span>PostgreSQL</span>
-                            <span class="percentage">20%</span>
-                        </li>
-                        <li>
-                            <span>SQL</span>
-                            <span class="percentage">40%</span>
-                        </li>
-                        <li>
-                            <span>Supabase</span>
-                            <span class="percentage">70%</span>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-
-            <section class="section">
-                <h2>Integracion de API</h2>
-                <div class="API">
-                    <ul class="skills-list">
-                        <li>
-                            <span>APIREST</span>
-                            <span class="percentage">20%</span>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-
-            <section class="section">
-                <h2>Herramientas de Desarrollo</h2>
-                <div class="HerramientasDesarrollo">
-                    <ul class="skills-list">
-                        <li>
-                            <span>Git</span>
-                            <span class="percentage">70%</span>
-                        </li>
-                        <li>
-                            <span>GitHub</span>
-                            <span class="percentage">60%</span>
-                        </li>
-                        <li>
-                            <span>VS Code</span>
-                            <span class="percentage">95%</span>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-
-            <section class="section">
-                <h2>IA</h2>
-                <div class="IA">
-                    <ul class="skills-list">
-                        <li>
-                            <span>ChatGPT</span>
-                            <span class="percentage">100%</span>
-                        </li>
-                        <li>
-                            <span>Herramienta de IA Para optimizacion del proyecto</span>
-                            <span class="percentage">80%</span>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-
-            <section class="section">
-                <h2>Gestion y Administracion de proyecto</h2>
-                <div class="GestionProyctoTI">
-                    <ul class="skills-list">
-                        <li>
-                            <span>Planificacion</span>
-                            <span class="percentage">60%</span>
-                        </li>
-                        <li>
-                            <span>administracionde recursos</span>
-                            <span class="percentage">50%</span>
-                        </li>
-                        <li>
-                            <span>hitos de desarrollo</span>
-                            <span class="percentage">40%</span>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-
-            <section class="section">
-                <h2>Metodologia Agil</h2>
-                <div class="metodologiaAgil">
-                    <ul class="skills-list">
-                        <li>
-                            <span>conocimiento en flujos de trabajo</span>
-                            <span class="percentage">40%</span>
-                        </li>
-                        <li>
-                            <span>entregas iteraticas</span>
-                            <span class="percentage">350%</span>
-                        </li>
-                        <li>
-                            <span>Scrum</span>
-                            <span class="percentage">100%</span>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-
-
-            <section class="section">
-                <h2>Documentacion tecnica</h2>
-                <div class="documentacionTecnica">
-                    <ul class="skills-list">
-                        <li>
-                            <span>Modelos de BD</span>
-                            <span class="percentage">26%</span>
-                        </li>
-                        <li>
-                            <span>Capacidad de documentar arquitecturas de software</span>
-                            <span class="percentage">39%</span>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-
-            <section class="section">
-                <h2>Habilidades Blandas</h2>
-                <div class="HabilidadesBlandas">
-                    <ul class="skills-list">
-                        <li>
-                            <span>Comunicacion efectiva</span>
-                            <span></span>
-                        </li>
-                        <li>
-                            <span>Trabajo en equipo</span>
-                            <span></span>
-                        </li>
-                        <li>
-                            <span>Liderazgo</span>
-                            <span></span>
-                        </li>
-                        <li>
-                            <span>Gestion del tiempo</span>
-                        </li>
-                    </ul>
-                    <ul class="skills-list">
-                        <li>
-                            <span>autogestion</span>
-                        </li>
-                        <li>
-                            <span>trabajo remoto</span>
-                        </li>
-                        <li>
-                            <span>Disciplina para el cumplimiento de objetivos de forma independiente y asincrona</span>
-                            
-                        </li>
-                    </ul>
-                </div>
-            </section>
-
-            <section class="section">
-                <h2>Comunicacion Asertiva</h2>
-                <div class="ComunicacionAsertiva">
-                    <span>Capacidad de explicar conceptos técnicos y colaborar en equipos multidiciplinarios 20%</span>
-                </div>
-            </section>
-
-
-            <section class="section">
-                <h2>Mentalidad de Aprendizaje Continua</h2>
-                <div class="MentalidadAprendizajeContinua">
-                    <ul class="skills-list">
-                        <li>
-                            <span>Disposición para aprender nuevas tecnologías y adaptarse a cambios en el entorno tecnológico</span>
-                        </li>
-                    </ul>
-                    <ul class="skills-list">
-                        <li>
-                            <span>Dispocion constante para fortalecer bases tecnicas y adoptar nuevas tecnologias </span>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-
-            <section class="section">
-                <h2>Resolucion de Problemas</h2>
-                <div class="ResolucionProblemas">
-                    <ul class="skills-list">
-                        <li>
-                            <span>Capacidad para analizar problemas complejos, identificar soluciones viables y tomar decisiones informadas</span>
-                        </li>
-                    </ul>
-                    <ul class="skills-list">
-                        <li>
-                            <span>Enfoque para detectar errores y proponer soluciones 90%</span>
-                        </li>
-                    </ul>
-                </div>
-            </section>          
-        </div>
-
-        <footer>
-            <h2>Contacto</h2>
-            <p>📩 jzarget23@gmail.com</p>
-            <div class="links">
-            <a href="https://www.linkedin.com/in/jorge-mario-ramirez-barrera-20028a140/">LinkedIn</a> | <a href="https://github.com/jorge-mario-ramirez-barrera">GitHub</a>
             </div>
-        </footer>
+        </section>
+
+        <!-- HABILIDADES -->
+        <section id="Habilidades-Tech" class="skills-section">
+            <div class="section-container">
+                <span class="code-comment">// habilidades técnicas</span>
+                <h2 class="section-title">Mi stack <span class="highlight-cyan">de</span> <span
+                        class="highlight-magenta">trabajo</span></h2>
+                <p class="description">Tecnologías y herramientas con las que trabajo y me sigo formando, organizadas
+                    por área de especialización.</p>
+
+                <div class="skills-grid">
+                    <!-- Frameworks -->
+                    <div class="skill-category dark-card">
+                        <h4><span class="cyan-bullet">•</span> Frameworks y Librerías</h4>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Vue.js</span> <span class="percent cyan-text">15%</span></div>
+                            <div class="progress-bar">
+                                <div class="progress-fill fill-gradient" style="width: 15%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>React</span> <span class="percent cyan-text">10%</span></div>
+                            <div class="progress-bar">
+                                <div class="progress-fill fill-gradient" style="width: 10%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Angular</span> <span class="percent cyan-text">10%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill fill-gradient" style="width: 10%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Maquetación -->
+                    <div class="skill-category dark-card">
+                        <h4><span class="cyan-bullet">•</span> Maquetación y Estilos</h4>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Bootstrap</span> <span class="percent cyan-text">80%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill fill-gradient" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Tailwind</span> <span class="percent cyan-text">25%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill fill-gradient" style="width: 25%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Responsive Design</span> <span
+                                    class="percent cyan-text">95%</span></div>
+                            <div class="progress-bar">
+                                <div class="progress-fill fill-gradient" style="width: 95%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Vuetify</span> <span class="percent cyan-text">20%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill fill-gradient" style="width: 20%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Diseño -->
+                    <div class="skill-category dark-card">
+                        <h4><span class="cyan-bullet">•</span> Diseño de Interfaz</h4>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Figma</span> <span class="percent cyan-text">80%</span></div>
+                            <div class="progress-bar">
+                                <div class="progress-fill fill-gradient" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>UX / UI</span> <span class="percent cyan-text">80%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill fill-gradient" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Backend -->
+                    <div class="skill-category dark-card">
+                        <h4><span class="cyan-bullet">•</span> Backend (básico)</h4>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Node.js</span> <span class="percent cyan-text">40%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill fill-gradient" style="width: 40%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Express</span> <span class="percent cyan-text">30%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill fill-gradient" style="width: 30%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>npm / npx</span> <span class="percent cyan-text">50%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill fill-gradient" style="width: 50%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- DB -->
+                    <div class="skill-category dark-card">
+                        <h4><span class="cyan-bullet">•</span> Bases de Datos</h4>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>MongoDB</span> <span class="percent cyan-text">20%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill fill-gradient" style="width: 20%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>PostgreSQL</span> <span class="percent cyan-text">20%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill fill-gradient" style="width: 20%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>SQL</span> <span class="percent cyan-text">40%</span></div>
+                            <div class="progress-bar">
+                                <div class="progress-fill fill-gradient" style="width: 40%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Supabase</span> <span class="percent cyan-text">70%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill fill-gradient" style="width: 70%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- APIs -->
+                    <div class="skill-category dark-card">
+                        <h4><span class="cyan-bullet">•</span> Integración de APIs</h4>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>API REST</span> <span class="percent cyan-text">20%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill fill-gradient" style="width: 20%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tools -->
+                    <div class="skill-category dark-card">
+                        <h4><span class="cyan-bullet">•</span> Herramientas de Desarrollo</h4>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Git</span> <span class="percent cyan-text">70%</span></div>
+                            <div class="progress-bar">
+                                <div class="progress-fill fill-gradient" style="width: 70%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>GitHub</span> <span class="percent cyan-text">60%</span></div>
+                            <div class="progress-bar">
+                                <div class="progress-fill fill-gradient" style="width: 60%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>VS Code</span> <span class="percent cyan-text">95%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill fill-gradient" style="width: 95%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AI -->
+                    <div class="skill-category dark-card">
+                        <h4><span class="cyan-bullet">•</span> Inteligencia Artificial</h4>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>ChatGPT</span> <span class="percent cyan-text">100%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill fill-gradient" style="width: 100%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>IA para optimización de proyectos</span> <span
+                                    class="percent cyan-text">80%</span></div>
+                            <div class="progress-bar">
+                                <div class="progress-fill fill-gradient" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gestión -->
+                    <div class="skill-category dark-card">
+                        <h4><span class="cyan-bullet">•</span> Gestión de Proyectos</h4>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Planificación</span> <span
+                                    class="percent cyan-text">60%</span></div>
+                            <div class="progress-bar">
+                                <div class="progress-fill fill-gradient" style="width: 60%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Administración de recursos</span> <span
+                                    class="percent cyan-text">90%</span></div>
+                            <div class="progress-bar">
+                                <div class="progress-fill fill-gradient" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Hitos de desarrollo</span> <span
+                                    class="percent cyan-text">40%</span></div>
+                            <div class="progress-bar">
+                                <div class="progress-fill fill-gradient" style="width: 40%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ágiles -->
+                    <div class="skill-category dark-card">
+                        <h4><span class="cyan-bullet">•</span> Metodologías Ágiles</h4>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Flujos de trabajo</span> <span
+                                    class="percent cyan-text">40%</span></div>
+                            <div class="progress-bar">
+                                <div class="progress-fill fill-gradient" style="width: 40%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Entregas iterativas</span> <span
+                                    class="percent cyan-text">50%</span></div>
+                            <div class="progress-bar">
+                                <div class="progress-fill fill-gradient" style="width: 50%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Scrum</span> <span class="percent cyan-text">100%</span></div>
+                            <div class="progress-bar">
+                                <div class="progress-fill fill-gradient" style="width: 100%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tech Doc -->
+                    <div class="skill-category dark-card">
+                        <h4><span class="cyan-bullet">•</span> Documentación Técnica</h4>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Modelos de BD</span> <span
+                                    class="percent cyan-text">20%</span></div>
+                            <div class="progress-bar">
+                                <div class="progress-fill fill-gradient" style="width: 20%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Arquitecturas de software</span> <span
+                                    class="percent cyan-text">30%</span></div>
+                            <div class="progress-bar">
+                                <div class="progress-fill fill-gradient" style="width: 30%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Cinta Infinita (Marquee) -->
+                <div class="marquee-wrapper">
+                    <div class="marquee-content">
+                        <span class="tool-tag">VS Code</span>
+                        <span class="tool-tag">Figma</span>
+                        <span class="tool-tag">Git</span>
+                        <span class="tool-tag">GitHub</span>
+                        <span class="tool-tag">Supabase</span>
+                        <span class="tool-tag">Bootstrap</span>
+                        <span class="tool-tag">Tailwind</span>
+                        <span class="tool-tag">HTML5</span>
+                        <span class="tool-tag">CSS3</span>
+                        <span class="tool-tag">JavaScript</span>
+                        <span class="tool-tag">Node.js</span>
+                        <span class="tool-tag">Express</span>
+                        <span class="tool-tag">React</span>
+                        <span class="tool-tag">Vue.js</span>
+                    </div>
+                    <!-- Clon para infinito -->
+                    <div class="marquee-content">
+                        <span class="tool-tag">VS Code</span>
+                        <span class="tool-tag">Figma</span>
+                        <span class="tool-tag">Git</span>
+                        <span class="tool-tag">GitHub</span>
+                        <span class="tool-tag">Supabase</span>
+                        <span class="tool-tag">Bootstrap</span>
+                        <span class="tool-tag">Tailwind</span>
+                        <span class="tool-tag">HTML5</span>
+                        <span class="tool-tag">CSS3</span>
+                        <span class="tool-tag">JavaScript</span>
+                        <span class="tool-tag">Node.js</span>
+                        <span class="tool-tag">Express</span>
+                        <span class="tool-tag">React</span>
+                        <span class="tool-tag">Vue.js</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROYECTOS -->
+        <section id="portafolio" class="portfolio-section">
+            <div class="section-container">
+                <span class="code-comment">// proyectos</span>
+                <h2 class="section-title">Cosas que he <span class="highlight-cyan">construi</span><span
+                        class="highlight-magenta">do</span></h2>
+                <p class="description">Repositorios reales que reflejan mi recorrido como desarrollador: desde apps
+                    multiplataforma hasta ejercicios académicos.</p>
+
+                <div class="filter-pills">
+                    <button class="pill active">Todos</button>
+                    <button class="pill">Desktop</button>
+                    <button class="pill">Web</button>
+                    <button class="pill">Frontend</button>
+                    <button class="pill">Académico</button>
+                </div>
+
+                <div class="portfolio-grid">
+                    <!-- PassUltra -->
+                    <div class="project-card dark-card">
+                        <div class="project-top-img icon-lock-bg">
+                            <span style="font-size: 60px;">🔐</span>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-head">
+                                <h3>passUltra</h3>
+                                <span class="tiny-pill">Desktop</span>
+                            </div>
+                            <p>Gestor de contraseñas multiplataforma (Escritorio, Web y Android) basado en una plantilla
+                                optimizada para alto rendimiento y seguridad en el lado del cliente.</p>
+                            <ul class="project-features">
+                                <li><span class="cyan-bullet">▸</span> Multiplataforma</li>
+                                <li><span class="cyan-bullet">▸</span> Seguridad cliente</li>
+                                <li><span class="cyan-bullet">▸</span> Alto rendimiento</li>
+                            </ul>
+                            <div class="hashtags">
+                                <span>#tauri</span> <span>#react</span> <span>#typescript</span> <span>#rust</span>
+                                <span>#tailwind</span> <span>#vite</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- waloVerso -->
+                    <div class="project-card dark-card">
+                        <div class="project-top-img icon-sword-bg">
+                            <span style="font-size: 60px;">⚔️</span>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-head">
+                                <h3>waloVerso</h3>
+                                <span class="tiny-pill">Web</span>
+                            </div>
+                            <p>Aplicación CRUD para la gestión de gremios en Wakfu, con registro de miembros, sistema de
+                                monitoreo de 'supervivencia de purga' y estadísticas en tiempo real.</p>
+                            <ul class="project-features">
+                                <li><span class="cyan-bullet">▸</span> CRUD completo</li>
+                                <li><span class="cyan-bullet">▸</span> Estadísticas en tiempo real</li>
+                                <li><span class="cyan-bullet">▸</span> Doble vista: tarjetas y tabla</li>
+                            </ul>
+                            <div class="hashtags">
+                                <span>#vue.js</span> <span>#vite</span> <span>#supabase</span> <span>#typescript</span>
+                                <span>#tailwind</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Front-end -->
+                    <div class="project-card dark-card">
+                        <div class="project-top-img icon-chart-bg">
+                            <span style="font-size: 60px;">📊</span>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-head">
+                                <h3>Front-end Investigación</h3>
+                                <span class="tiny-pill">Frontend</span>
+                            </div>
+                            <p>Interfaz para sistema de gestión de proyectos de investigación con dashboard
+                                administrativo completo e integración con servicios de Backend.</p>
+                            <ul class="project-features">
+                                <li><span class="cyan-bullet">▸</span> Dashboard admin</li>
+                                <li><span class="cyan-bullet">▸</span> Gestión de estados</li>
+                                <li><span class="cyan-bullet">▸</span> Integración API</li>
+                            </ul>
+                            <div class="hashtags">
+                                <span>#vue.js 3</span> <span>#vite</span> <span>#tailwind</span> <span>#javascript
+                                    ES6+</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- miBiografia -->
+                    <div class="project-card dark-card">
+                        <div class="project-top-img"
+                            style="background: linear-gradient(135deg, #1e1333 0%, #0d0914 100%);">
+                            <span style="font-size: 50px;">👤</span>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-head">
+                                <h3>miBiografia</h3>
+                                <span class="tiny-pill">Web</span>
+                            </div>
+                            <p>Sitio web personal tipo portafolio con estructura modular (HTML/CSS/JS), lógica
+                                interactiva y diseño responsivo moderno.</p>
+                            <ul class="project-features">
+                                <li><span class="cyan-bullet">▸</span> Estructura modular</li>
+                                <li><span class="cyan-bullet">▸</span> Lógica interactiva</li>
+                                <li><span class="cyan-bullet">▸</span> Responsive</li>
+                            </ul>
+                            <div class="hashtags">
+                                <span>#HTML</span> <span>#CSS</span> <span>#JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- senasoft -->
+                    <div class="project-card dark-card">
+                        <div class="project-top-img"
+                            style="background: linear-gradient(135deg, #2b1f13 0%, #17110a 100%);">
+                            <span style="font-size: 50px;">🏆</span>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-head">
+                                <h3>senasoft</h3>
+                                <span class="tiny-pill">Académico</span>
+                            </div>
+                            <p>Proyecto desarrollado para la competencia nacional Senasoft. Enfoque en resolución de
+                                retos técnicos bajo presión.</p>
+                            <ul class="project-features">
+                                <li><span class="cyan-bullet">▸</span> Competencia nacional</li>
+                                <li><span class="cyan-bullet">▸</span> Retos técnicos</li>
+                                <li><span class="cyan-bullet">▸</span> Trabajo bajo presión</li>
+                            </ul>
+                            <div class="hashtags">
+                                <span>#JavaScript</span> <span>#HTML5</span> <span>#CSS3</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gestión-Oficios -->
+                    <div class="project-card dark-card">
+                        <div class="project-top-img"
+                            style="background: linear-gradient(135deg, #181d29 0%, #0c0f14 100%);">
+                            <span style="font-size: 50px;">📄</span>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-head">
+                                <h3>Gestión-Oficios</h3>
+                                <span class="tiny-pill">Web</span>
+                            </div>
+                            <p>Sistema para la administración y seguimiento de documentos oficiales u oficios
+                                institucionales.</p>
+                            <ul class="project-features">
+                                <li><span class="cyan-bullet">▸</span> Gestión documental</li>
+                                <li><span class="cyan-bullet">▸</span> Seguimiento</li>
+                                <li><span class="cyan-bullet">▸</span> Base de datos</li>
+                            </ul>
+                            <div class="hashtags">
+                                <span>#PHP</span> <span>#Python</span> <span>#HTML</span> <span>#CSS</span>
+                                <span>#SQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gráficos-de-datos -->
+                    <div class="project-card dark-card">
+                        <div class="project-top-img"
+                            style="background: linear-gradient(135deg, #111a22 0%, #090d11 100%);">
+                            <span style="font-size: 50px;">📈</span>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-head">
+                                <h3>Gráficos-de-datos</h3>
+                                <span class="tiny-pill">Frontend</span>
+                            </div>
+                            <p>Visualización de información mediante representaciones gráficas interactivas o estáticas.
+                            </p>
+                            <ul class="project-features">
+                                <li><span class="cyan-bullet">▸</span> Visualización</li>
+                                <li><span class="cyan-bullet">▸</span> Gráficas interactivas</li>
+                                <li><span class="cyan-bullet">▸</span> Análisis de datos</li>
+                            </ul>
+                            <div class="hashtags">
+                                <span>#JavaScript</span> <span>#Chart.js</span> <span>#HTML</span> <span>#CSS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Maquetación UI Formularios -->
+                    <div class="project-card dark-card">
+                        <div class="project-top-img"
+                            style="background: linear-gradient(135deg, #1a2211 0%, #10140b 100%);">
+                            <span style="font-size: 50px;">🧩</span>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-head">
+                                <h3>Maquetación UI Formularios</h3>
+                                <span class="tiny-pill">Frontend</span>
+                            </div>
+                            <p>Diseño y maquetación de interfaces de usuario enfocadas en formularios de envío de datos
+                                (POST).</p>
+                            <ul class="project-features">
+                                <li><span class="cyan-bullet">▸</span> UI Forms</li>
+                                <li><span class="cyan-bullet">▸</span> Flexbox/Grid</li>
+                                <li><span class="cyan-bullet">▸</span> POST handling</li>
+                            </ul>
+                            <div class="hashtags">
+                                <span>#HTML5</span> <span>#CSS3</span> <span>#JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- calculadora -->
+                    <div class="project-card dark-card">
+                        <div class="project-top-img"
+                            style="background: linear-gradient(135deg, #2b1111 0%, #170a0a 100%);">
+                            <span style="font-size: 50px;">🧮</span>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-head">
+                                <h3>calculadora</h3>
+                                <span class="tiny-pill">Web</span>
+                            </div>
+                            <p>Aplicación funcional para realizar operaciones matemáticas básicas con una interfaz
+                                limpia.</p>
+                            <ul class="project-features">
+                                <li><span class="cyan-bullet">▸</span> Operaciones aritméticas</li>
+                                <li><span class="cyan-bullet">▸</span> UI limpia</li>
+                                <li><span class="cyan-bullet">▸</span> Lógica JS</li>
+                            </ul>
+                            <div class="hashtags">
+                                <span>#JavaScript</span> <span>#HTML</span> <span>#CSS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ejercicios_python -->
+                    <div class="project-card dark-card">
+                        <div class="project-top-img"
+                            style="background: linear-gradient(135deg, #11261d 0%, #0a1712 100%);">
+                            <span style="font-size: 50px;">🐍</span>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-head">
+                                <h3>ejercicios_python</h3>
+                                <span class="tiny-pill">Académico</span>
+                            </div>
+                            <p>Repositorio de práctica con algoritmos, estructuras de datos y lógica de programación
+                                básica y avanzada.</p>
+                            <ul class="project-features">
+                                <li><span class="cyan-bullet">▸</span> Algoritmos</li>
+                                <li><span class="cyan-bullet">▸</span> Estructuras de datos</li>
+                                <li><span class="cyan-bullet">▸</span> Lógica avanzada</li>
+                            </ul>
+                            <div class="hashtags">
+                                <span>#Python 3</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- curso-html -->
+                    <div class="project-card dark-card">
+                        <div class="project-top-img"
+                            style="background: linear-gradient(135deg, #1e1333 0%, #0d0914 100%);">
+                            <span style="font-size: 50px;">📚</span>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-head">
+                                <h3>curso-html</h3>
+                                <span class="tiny-pill">Académico</span>
+                            </div>
+                            <p>Material de estudio y ejercicios prácticos realizados durante el aprendizaje de
+                                maquetación web.</p>
+                            <ul class="project-features">
+                                <li><span class="cyan-bullet">▸</span> Maquetación</li>
+                                <li><span class="cyan-bullet">▸</span> Ejercicios prácticos</li>
+                                <li><span class="cyan-bullet">▸</span> Aprendizaje</li>
+                            </ul>
+                            <div class="hashtags">
+                                <span>#HTML5</span> <span>#CSS3</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto-Ramírez -->
+                    <div class="project-card dark-card">
+                        <div class="project-top-img"
+                            style="background: linear-gradient(135deg, #142416 0%, #0b140c 100%);">
+                            <span style="font-size: 50px;">🌿</span>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-head">
+                                <h3>Proyecto-Ramírez</h3>
+                                <span class="tiny-pill">Académico</span>
+                            </div>
+                            <p>Trabajo académico/personal donde se gestionan funcionalidades específicas bajo una rama
+                                personalizada.</p>
+                            <ul class="project-features">
+                                <li><span class="cyan-bullet">▸</span> Gestión de ramas</li>
+                                <li><span class="cyan-bullet">▸</span> Funcionalidades específicas</li>
+                                <li><span class="cyan-bullet">▸</span> BD</li>
+                            </ul>
+                            <div class="hashtags">
+                                <span>#Java</span> <span>#Python</span> <span>#SQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section id="contacto" class="contact-section">
+            <div class="section-container">
+                <span class="code-comment">// contacto</span>
+                <div class="contact-grid">
+
+                    <div class="contact-info">
+                        <h2 class="section-title">¿Trabajamos <span class="highlight-cyan">juntos</span>?</h2>
+                        <p class="description">Estoy abierto a oportunidades junior, freelance y colaboraciones open
+                            source. Escríbeme, ¡me encantaría leerte!</p>
+
+                        <div class="contact-methods">
+                            <div class="contact-item">
+                                <div class="contact-icon">📧</div>
+                                <div class="contact-item-text">
+                                    <span>Email</span>
+                                    <p>jzarget23@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">🐙</div>
+                                <div class="contact-item-text">
+                                    <span>GitHub</span>
+                                    <p>github.com/jorgemario</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">💼</div>
+                                <div class="contact-item-text">
+                                    <span>LinkedIn</span>
+                                    <p>in/jorge-mario-ramirez</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-container">
+                        <div class="dark-card">
+                            <form class="contact-form" action="#" method="POST">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label>Nombre</label>
+                                        <input type="text" class="form-control" placeholder="Tu nombre" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Email</label>
+                                        <input type="email" class="form-control" placeholder="tu@email.com" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Asunto</label>
+                                    <input type="text" class="form-control" placeholder="¿De qué hablamos?">
+                                </div>
+                                <div class="form-group">
+                                    <label>Mensaje</label>
+                                    <textarea class="form-control" placeholder="Cuéntame sobre tu proyecto..."
+                                        required></textarea>
+                                </div>
+                                <button type="submit" class="btn-submit">Enviar mensaje 🚀</button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-left">
+            &copy; 2026 Jorge Mario Ramírez Barrera &middot; Hecho con ☕ y HTML - CSS - JAVASCRIPT
+        </div>
+        <div class="footer-right">
+            &lt;coded with passion /&gt;
+        </div>
+    </footer>
+
+    <!-- SCROLL CIRCULAR (Boton Volver Arriba) -->
+    <div class="scroll-progress" id="scrollProgress">
+        <svg width="60" height="60" viewBox="0 0 60 60">
+            <circle class="progress-bg" cx="30" cy="30" r="26" />
+            <circle class="progress-bar-circle" id="progressCircle" cx="30" cy="30" r="26" />
+        </svg>
+        <div class="scroll-arrow">↑</div>
     </div>
 
-    <script src="logica.js"></script>    
+    <script src="logica.js"></script>
 </body>
+
 </html>

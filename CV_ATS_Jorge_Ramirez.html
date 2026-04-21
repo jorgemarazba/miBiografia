@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jorge Ramírez - CV Funcional y ATS</title>
+    <style>
+        /* ESTILO RESUME "HARVARD FORMAT" - 100% AMIGABLE CON ATS Y DE APARIENCIA SUPER PROFESIONAL */
+        :root {
+            --font-main: "Times New Roman", Times, serif; /* Tradicional y aceptado universalmente */
+        }
+
+        body {
+            font-family: var(--font-main);
+            color: #000;
+            line-height: 1.35;
+            margin: 0 auto;
+            max-width: 850px;
+            padding: 40px 50px;
+            background-color: #f7f9fa; /* Ligeramente gris para la pantalla */
+        }
+
+        /* Contenedor que simula una hoja de papel física A4 */
+        .page {
+            background-color: #fff;
+            padding: 50px 60px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        @media print {
+            body {
+                background-color: #fff;
+                padding: 0;
+            }
+            .page {
+                box-shadow: none;
+                padding: 0;
+            }
+            .no-print {
+                display: none !important;
+            }
+            a {
+                text-decoration: none;
+                color: #000; /* Previene hipervínculos azules al imprimir */
+            }
+        }
+
+        /* ENCABEZADO */
+        header {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            font-size: 26pt;
+            text-transform: uppercase;
+            font-weight: normal;
+            margin: 0 0 10px 0;
+            letter-spacing: 1px;
+        }
+
+        .contact-info {
+            font-size: 11pt;
+            margin-bottom: 5px;
+        }
+
+        /* TÍTULOS DE SECCIÓN */
+        h2 {
+            font-size: 12pt;
+            text-transform: uppercase;
+            font-weight: bold;
+            border-bottom: 1px solid #000;
+            margin-bottom: 12px;
+            margin-top: 25px;
+            padding-bottom: 3px;
+        }
+
+        /* ITEMS (Experiencia, Proyectos, Educación) */
+        .item-container {
+            margin-bottom: 15px;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 2px;
+        }
+
+        .item-title {
+            font-weight: bold;
+            font-size: 11pt;
+            flex-grow: 1; /* Permite que el ATS lea de izquierda a derecha natural */
+        }
+
+        /* Fechas siempre a la derecha de forma visual, pero ordenadas semánticamente */
+        .item-date {
+            font-size: 11pt;
+            text-align: right;
+            white-space: nowrap;
+        }
+
+        .item-subtitle {
+            font-style: italic;
+            font-size: 11pt;
+            margin-bottom: 8px;
+        }
+
+        /* LISTAS Y VIÑETAS (Bullet points) */
+        ul {
+            margin-top: 0;
+            margin-bottom: 0;
+            padding-left: 20px; /* Margen clásico */
+        }
+
+        li {
+            font-size: 10.5pt;
+            margin-bottom: 5px;
+            text-align: justify;
+        }
+
+        /* SECCIÓN DE HABILIDADES */
+        .skills-container {
+            font-size: 10.5pt;
+        }
+        
+        .skills-group {
+            margin-bottom: 8px;
+        }
+
+        .skills-label {
+            font-weight: bold;
+        }
+
+        /* BARRA DE ACCIONES WEB */
+        .action-bar {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px dashed #ccc;
+        }
+
+        .action-btn {
+            padding: 10px 20px;
+            background-color: #1a1a1a;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            font-family: Arial, sans-serif;
+            border-radius: 4px;
+            margin: 0 10px;
+        }
+
+        .action-btn.secondary {
+            background-color: #fff;
+            color: #1a1a1a;
+            border: 2px solid #1a1a1a;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Panel de control flotante (Oculto en ATS/PDF) -->
+    <div class="action-bar no-print" style="border:none; margin-top:0; padding-bottom: 30px;">
+        <button class="action-btn" onclick="window.print()">📥 Imprimir a PDF (Aceptado ATS)</button>
+        <button class="action-btn secondary" onclick="window.location.href='index.html'">Volver al Portafolio</button>
+        <p style="font-family: Arial, sans-serif; font-size: 10pt; color: #666; margin-top: 15px;">Guarda este documento como PDF usando 'Destino: Guardar como PDF'. <br>Diseñado en Estilo "Harvard" rígido para pasar motores automáticos.</p>
+    </div>
+
+    <!-- EL PAPEL (CV REAL) -->
+    <div class="page">
+        <!-- ENCABEZADO -->
+        <header>
+            <h1>Jorge Mario Ramírez Barrera</h1>
+            <div class="contact-info">
+                Medellín, Colombia | +57 123 456 7890 | jzarget23@gmail.com
+            </div>
+            <div class="contact-info">
+                LinkedIn: in/jorge-mario-ramirez | GitHub: github.com/jorgemario | Portafolio Web Integrado
+            </div>
+        </header>
+
+        <!-- RESUMEN PROFESIONAL -->
+        <h2>Resumen Profesional</h2>
+        <div style="font-size: 10.5pt; text-align: justify; margin-bottom: 20px;">
+            Desarrollador de Software enfocado en Frontend y gestión de proyectos TI. Estudiante de último nivel en Ingeniería de Sistemas con base técnica tecnológica enfocada en metodologías ágiles. Experiencia demostrada en la estructuración de interfaces dinámicas, aplicaciones web de extremo a extremo, herramientas multiplataforma y manipulación de bases de datos relacionales, apoyado por la automatización continua e Inteligencia Artificial aplicada.
+        </div>
+
+        <!-- EDUCACIÓN -->
+        <h2>Educación</h2>
+        
+        <div class="item-container">
+            <div class="item-header">
+                <div class="item-title">Corporación Universitaria Remington</div>
+                <div class="item-date">Febrero 2020 – Actualidad</div>
+            </div>
+            <div class="item-subtitle">Ingeniería de Sistemas (Último Nivel)</div>
+        </div>
+
+        <div class="item-container">
+            <div class="item-header">
+                <div class="item-title">Servicio Nacional de Aprendizaje (SENA)</div>
+                <div class="item-date">Enero 2022 – Diciembre 2022</div>
+            </div>
+            <div class="item-subtitle">Tecnólogo en Análisis y Desarrollo de Software (ADSO)</div>
+        </div>
+
+        <!-- EXPERIENCIA TÉCNICA / PROYECTOS -->
+        <h2>Experiencia Técnica y Proyectos Aplicados</h2>
+
+        <div class="item-container">
+            <div class="item-header">
+                <div class="item-title">passUltra — Arquitectura Multiplataforma</div>
+                <div class="item-date">Febrero 2026 – Presente</div>
+            </div>
+            <div class="item-subtitle">Líder Técnico & Desarrollador Full-Stack (Tauri, React, TypeScript, Rust)</div>
+            <ul>
+                <li>Diseñé e implementé un gestor de contraseñas de alta seguridad interoperable entre Web, Escritorio y Android asegurando alta concurrencia de datos.</li>
+                <li>Desarrollé la interfaz gráfica de usuario desde cero garantizando flujos de experiencia optimizada (UX) basados en seguridad <em>Zero-Knowledge</em>.</li>
+                <li>Implementé entornos y pipelines de construcción usando Vite y TailwindCSS, mejorando los tiempos de carga visual en un amplio porcentaje.</li>
+            </ul>
+        </div>
+
+        <div class="item-container">
+            <div class="item-header">
+                <div class="item-title">waloVerso — Desarrollo de CRUD Web Administrativo</div>
+                <div class="item-date">Noviembre 2025 – Enero 2026</div>
+            </div>
+            <div class="item-subtitle">Desarrollador Frontend (Vue.js, Supabase, TailwindCSS, TypeScript)</div>
+            <ul>
+                <li>Desarrollé una aplicación completa para la administración y supervisión de gremios empresariales en tiempo real utilizando la base de datos Supabase como BaaS.</li>
+                <li>Concebí e implementé vistas modulares y escalables de monitoreo (en tarjeta y tabla plana) optimizando el tiempo requerido por el perfil administrativo.</li>
+                <li>Garantice la validación de registros y la autenticación robusta mediante integraciones de API Restful.</li>
+            </ul>
+        </div>
+
+        <div class="item-container">
+            <div class="item-header">
+                <div class="item-title">Lexi Assistant — Automatización y Software Escalable</div>
+                <div class="item-date">Junio 2024 – Octubre 2024</div>
+            </div>
+            <div class="item-subtitle">Desarrollador Independiente (Node.js, APIs de Inteligencia Artificial)</div>
+            <ul>
+                <li>Transformé requerimientos de negocio abstractos en un bot interactivo de asistencia aplicando algoritmos en el lado del servidor sobre entornos transaccionales.</li>
+                <li>Manejé el estado lógico y despliegue modular previniendo cuellos de botella mediante control de concurrencia y arquitecturas limpias de backend.</li>
+            </ul>
+        </div>
+
+        <!-- HABILIDADES TÉCNICAS -->
+        <h2>Habilidades Adicionales</h2>
+        <div class="skills-container">
+            <div class="skills-group">
+                <span class="skills-label">Lenguajes y Herramientas Web:</span> JavaScript ES6+, HTML5 Semántico, CSS3 Flex/Grid, TypeScript, Python 3, Node.js.
+            </div>
+            <div class="skills-group">
+                <span class="skills-label">Frameworks y Librerías:</span> Vue.js 3, React.js, Angular (Básico), TailwindCSS, Bootstrap, Vite.
+            </div>
+            <div class="skills-group">
+                <span class="skills-label">Bases de Datos, Infraestructura y Control:</span> Supabase, PostgreSQL, MySQL/SQL, MongoDB, Git, GitHub Flow, API REST.
+            </div>
+            <div class="skills-group">
+                <span class="skills-label">UI/UX y Prototipado:</span> Figma Interactivo, Estrategia Mobile-First, Principios de Glassmorphism/Flat Design.
+            </div>
+            <div class="skills-group">
+                <span class="skills-label">Habilidades de Gestión:</span> Scrum Sprints, Resolución Bajo Presión (Competidor Nacional SENAsoft), Documentación de Arquitecturas TI.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
